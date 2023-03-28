@@ -7,7 +7,7 @@ This project is based on the command-line interface which is a programmable prog
 To install the application, follow these steps:
 
 1. Install Python on your system 
-2. Clone the repository: `https://github.com/duhawala/Chat-Bot.git`
+2. Clone the repository: `https://github.com/duhawala/ChatBot.git`
 3. Run as **python3 Football_Chatbot.py**
 
 ## Usage
