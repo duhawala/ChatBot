@@ -15,7 +15,7 @@ To install the application, follow these steps:
 To use the application, follow these steps:
 
 1.  Open the terminal or run manually by finding the file and etc.
-2.  After, you run the file you will recieve prompts and write answers as per the question.
+2.  After you run the file you will recieve prompts and write answers as per the question.
 
 ## Credits
 
