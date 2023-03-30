@@ -1,4 +1,4 @@
-# welcome 
+# welcome - Murtuza Duhawala
 def welcome():
   print("Hello. I see you are interested in football.")
   question = input("How may I help you? ")
@@ -7,7 +7,7 @@ def welcome():
   else:
     print("Okay, thank you. Bye.")
 
-# match status
+# match status - Rozeta Singh 
 def match():
   futureMatch = input("Would you like some more information on upcoming matches? ")
   if futureMatch.lower() == "yes": 
@@ -16,22 +16,22 @@ def match():
     if ans.lower() == "yes": 
       previousMatch = input("Have you seen the last game? ")
       if previousMatch.lower() == "no": 
-        print(lastMatch())
+       lastMatch()
         ans = input("Is there anything else you would like to know about? ")
-        print(welcome())
+        welcome()
     else:
       pass
 
-# ranking status 
+# ranking status - Murtuza Duhawala
 def rankings():
   rankings = input("Would you like to know more about the ranks? ")
   if rankings.lower() == "yes":
     print("Tottenham is ranked 4th in the league table")
-    print(moreInfo())
+    moreInfo()
   else:
     pass
 
-# gets the data of the last match including the score, goals
+# gets the data of the last match including the score, goals - Rozeta Singh 
 def lastMatch():
   print("For the last game. Tottenham played against Nottingham Forest on Saturday 11th March. The score was 3-1. ")
   lastGame = input("Would you like to know more information about this game? ")
@@ -43,23 +43,23 @@ def lastMatch():
       dateOfMatch = input("Enter the date of the match you would like to know about in the format (DD/MM/YYYY) ")
       print("Tottenham played against Manchester United on", dateOfMatch)
 
-# asking the user if they want to know more information or if they want to exit the chatbot
+# asking the user if they want to know more information or if they want to exit the chatbot - Murtuza Duhawala
 def moreInfo():
   moreInfo = input("Would you like to know any more information? ")
   if moreInfo.lower() == "yes":
-    print(welcome())
+    welcome()
   else:
     print("Okay, thank you. Bye.")
     # exit the program
       
-# searches for keywords and directs them to a particular function
+# searches for keywords and directs them to a particular function - Rozeta Singh 
 def keywordSearch(word):
-  listOfKeywords = ["match", "player", "status", "ranking", "team", "scores", "assists"]
+  listOfKeywords = ["match", "ranking"]
   if word in listOfKeywords:
     if word.lower() == "match": # make it case sensitive 
-      print(match())
+      match()
     elif word.lower() == "ranking": # make it case sensitive 
-      print(rankings())
+      rankings()
     else:
       welcome()
     
